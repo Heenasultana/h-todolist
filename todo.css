@@ -1,0 +1,120 @@
+/* Overall Page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f3f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* To-do container */
+.todo-container {
+  background-color: #e19292;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Girl image inside box */
+.image-inside {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.image-inside img {
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Title */
+h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2.4em;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.heart {
+  color: #d1005a;
+  font-size: 1.2em;
+  margin-left: 8px;
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+  background: #fceff1;
+  padding: 10px 12px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+  transform: scale(1.3);
+  margin-right: 12px;
+}
+
+/* Text input */
+.task-text {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1.05em;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+.task-text::placeholder {
+  color: #888;
+}
+
+/* Delete button */
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #cc0000;
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+footer a {
+  color: #d1005a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
